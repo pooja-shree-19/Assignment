@@ -1,0 +1,54 @@
+.menu {
+  position: absolute; /* Ensure it is positioned relative to its container */
+  top: 50px; /* Align with the top of the container */
+  left: 0; /* Align with the left side of the container */
+  width: 200px;
+  background-color: #222; /* Background color */
+  border: 1px solid #333;
+  padding: 10px; /* Padding around the items */
+  border-radius: 4px; /* Rounded corners for a modern look */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+  z-index: 10; /* Ensure it's on top of other elements */
+  display: flex; /* Flexbox for horizontal layout */
+  align-items: center; /* Center items vertically */
+}
+
+.menu-content{
+  position: relative;
+  display:flex;
+  flex-direction: column;
+}
+
+.menu-items-container {
+  display: flex; /* Arrange menu items in a row */
+  gap: 10px; /* Space between menu items */
+}
+
+.menu-item {
+  background: transparent; /* No background color */
+  border: none; /* Remove default border */
+  cursor: pointer; /* Pointer cursor on hover */
+  padding: 10px; /* Padding around text */
+  font-size: 16px; /* Font size */
+  color: #333; /* Text color */
+  text-align: left;
+  width: 100%
+}
+
+.menu-item:hover,
+.menu-item.selected {
+  font-weight: bold; /* Highlight selected item */
+  color: #007bff; /* Change text color when selected */
+}
+
+.menu-close {
+  background: transparent; /* No background color */
+  border: none; /* Remove default border */
+  cursor: pointer; /* Pointer cursor on hover */
+  font-size: 20px; /* Font size for close button */
+  color: #333; /* Text color */
+  position: absolute; /* Position it in the top right */
+  top: 10px; /* Align it at the top */
+  right: 10px; /* Align it at the right */
+}
+
